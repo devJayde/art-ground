@@ -7,7 +7,7 @@ const ScrollButton = (props) => {
 
   const handleFollow = () => {
     setScrollY(window.pageYOffset);
-    console.log('follow')
+    //console.log('follow')
     if (ScrollY > 100) {
       // 100 이상이면 버튼이 보이게
       setBtnStatus(true);

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { useHistory, withRouter } from 'react-router-dom';
 import ArtDetail from '../../components/artDetail/ArtDetail';
 import GallerySlider from '../../components/gallerySlider/GallerySlider';
 import PurchaseModal from '../../components/modals/PurchaseModal';
@@ -87,6 +87,12 @@ const GalleryDetail = ({ isLogin, userinfo, handle3dExhibition, location}) => {
   const handleModalOpen = (el) => {
     setArtDetail(el); //모달에 띄울 art 전달
   }
+
+  const history = useHistory();
+  const goThreeDPage = () => {
+    handle3dExhibition(exhibitionInfo.id);
+    history.push('/3dgallery')
+  }
   
   if(isLoading){
     return (
@@ -141,12 +147,8 @@ const GalleryDetail = ({ isLogin, userinfo, handle3dExhibition, location}) => {
 
       <p className={styles.content}>{exhibitionInfo.exhibit_desc}</p>
 
-      {exhibitionInfo.exhibit_type ===2 ?
-      <Link to="/3dgallery"> 
-        <div className={styles.threeDBtn} 
-        onClick={() => handle3dExhibition(exhibitionInfo.id)}
-        >3D 전시관 둘러보기</div>
-      </Link>
+      {exhibitionInfo.exhibit_type === 2 ?
+      <div className={styles.threeDBtn} onClick={goThreeDPage}>3D 전시관 둘러보기</div>
       : null}
 
       <div className={styles.intro}>작가</div>

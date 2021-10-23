@@ -1,13 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { withRouter } from 'react-router';
 import ThreeDDetail from '../../components/3dDetail/ThreeDDetail';
 import ThreeDModal from '../../components/modals/ThreeDModal';
 
 
-const ThreeDGallery = ({ threeDSelected, location }) => {
+const ThreeDGallery = ({ threeDSelected }) => {
 
   const [modalOpen, setModalOpen] = useState(true);
-  //const [exhibitionId, setexhibitionId] = useState(Number(location.pathname.substring(11)));
   
   const escFunction = useCallback((event) => {
     if(event.keyCode === 27) {
@@ -16,6 +14,7 @@ const ThreeDGallery = ({ threeDSelected, location }) => {
   }, []);
 
   useEffect(() => {
+    console.log(threeDSelected);
     document.addEventListener("keydown", escFunction, false);
     return () => {
       document.removeEventListener("keydown", escFunction, false);
@@ -26,7 +25,7 @@ const ThreeDGallery = ({ threeDSelected, location }) => {
     setModalOpen(false);
   }
 
-  return (
+  return ( 
     <> 
       <ThreeDDetail 
       threeDSelected={threeDSelected} 
@@ -42,4 +41,4 @@ const ThreeDGallery = ({ threeDSelected, location }) => {
 
 }
 
-export default withRouter(ThreeDGallery);
+export default ThreeDGallery;
