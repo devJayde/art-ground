@@ -247,33 +247,17 @@ https://art-ground.io/
 
 ---
 
-<<<<<<< HEAD
-
 ## 👨‍👧‍👧Team Klassiker
+| 이름(깃헙링크) | Position & Role|
+| ------- | ----- |
+| [문순려(팀장)](https://github.com/Sunryeo) | 💻 Back-end|
+| [박지영](https://github.com/devjade) | 💻 Front-end|
+| [유다희](https://github.com/tkdkagody) | 💻 Front-end|
+| [이동욱](https://github.com/dongukuklee) | 💻 Back-end|
 
-=======
-
-## 👨‍👧‍👧 Team Klassiker
-
-> > > > > > > 588be633c1c607a71b2ee02848d8e127572a87d9
-> > > > > > > | 이름(깃헙링크) | Position & Role|
-> > > > > > > | ------- | ----- |
-> > > > > > > | [문순려(팀장)](https://github.com/Sunryeo) | 💻 Back-end|
-> > > > > > > | [박지영](https://github.com/devjade) | 💻 Front-end|
-> > > > > > > | [유다희](https://github.com/tkdkagody) | 💻 Front-end|
-> > > > > > > | [이동욱](https://github.com/dongukuklee) | 💻 Back-end|
 
 ## 🗒 Wiki
-
 https://github.com/codestates/art-ground/wiki
 
-<<<<<<< HEAD
-
-## 👀더 자세한 내용은 아래 링크에서 확인
-
-=======
-
-## 👀 더 자세한 내용은 아래 링크에서 확인
-
-> > > > > > > 588be633c1c607a71b2ee02848d8e127572a87d9
-> > > > > > > https://www.notion.so/4-Klassiker-art-Ground-8065b7f612a746d7a7fbd4f329749474
+##  👀더 자세한 내용은 아래 링크에서 확인
+https://www.notion.so/4-Klassiker-art-Ground-8065b7f612a746d7a7fbd4f329749474
