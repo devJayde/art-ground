@@ -1,6 +1,15 @@
-## 🏡  art-Ground  🏡 
-<img width="824" src="https://user-images.githubusercontent.com/83934037/138430276-8d79c0cf-4d9e-4303-8879-3324c7b3c0b8.gif">
+## Introduction
+안녕하세요!😀
 
+본 레포지토리는 코드스테이츠 소프트웨어 엔지니어링 프로그램에 참여하면서 개발한 팀 프로젝트 종료 이후, 개선 및 추가 사항들을 반영하면서 그 기록들을 남긴 곳입니다. 
+수료 당시의 프로젝트의 원본 레포지토리는 여기(--> https://github.com/codestates/art-ground )를 참고해주세요!
+
+
+- 프로젝트 회고: https://bit.ly/3pAdBkU
+- 프로젝트 데브로그 & 에러핸들링로그: https://bit.ly/30OUjhx
+
+## 🏡  art-Ground  🏡 
+<img width="800" src="https://user-images.githubusercontent.com/83934037/138681410-ba3a8726-9155-4fec-b178-f01071f7ce16.gif">
 
 ### 누구나 예술가가 될 수 있는 공간, art-Ground.
 
@@ -239,7 +248,7 @@ https://art-ground.io/
 ---
 
 
-## 👨‍👧‍👧Team Klassiker
+## 👨‍👧‍👧 Team Klassiker
 | 이름(깃헙링크) | Position & Role|
 | ------- | ----- |
 | [문순려(팀장)](https://github.com/Sunryeo) | 💻 Back-end|
@@ -251,5 +260,5 @@ https://art-ground.io/
 ## 🗒 Wiki
 https://github.com/codestates/art-ground/wiki
 
-##  👀더 자세한 내용은 아래 링크에서 확인
+##  👀 더 자세한 내용은 아래 링크에서 확인
 https://www.notion.so/4-Klassiker-art-Ground-8065b7f612a746d7a7fbd4f329749474
