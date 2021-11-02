@@ -38,7 +38,7 @@ function App() {
   const [isAdmin, setisAdmin] = useState(false);
   const [modifyRender, setModifyRender] = useState(false); //render
   const [modalOpen, setModalOpen] = useState(false);
-  const [threeDSelected, setThreeDSelected] = useState(null);
+
 
   useEffect(() => {
     if (localStorage.getItem("isLogin")) {
@@ -197,7 +197,6 @@ function App() {
           <GalleryDetail 
           isLogin={isLogin}
           userinfo={userinfo}
-          handle3dExhibition={(el) => setThreeDSelected(el)} 
           />
           <ScrollButton />
         </Route>
@@ -238,9 +237,7 @@ function App() {
           <ScrollButton />
         </Route>
         <Route path="/3dgallery">
-          <ThreeDGallery 
-          threeDSelected={threeDSelected}
-          />
+          <ThreeDGallery />
         </Route>
         <Route exact path="/modify">
           <Navbar

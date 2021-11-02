@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useHistory, withRouter } from 'react-router-dom';
 import ArtDetail from '../../components/artDetail/ArtDetail';
 import GallerySlider from '../../components/gallerySlider/GallerySlider';
@@ -8,6 +8,7 @@ import { createLike, deleteLike, getExhibitionInfo, getLikesInfo } from "../../a
 import KakaoShare from '../../components/kakaoShare/KakaoShare';
 import KakaoPremiumModal from '../../components/modals/KakaoPremiumModal';
 import GalleryModal from '../../components/modals/GalleryModal';
+import { ThreeDContextContextStore } from '../../contexts/ThreeDContext';
 
 const GalleryDetail = ({ isLogin, userinfo, handle3dExhibition, location}) => {
 
@@ -21,6 +22,8 @@ const GalleryDetail = ({ isLogin, userinfo, handle3dExhibition, location}) => {
   const [isLiked, setLiked] = useState(false); //좋아요 상태값
   const [rerender, setRerender] = useState(false); // 좋아요 & 좋아요해제 시 하트 컴포넌트 재랜더링
   const [isLoading, setLoading] = useState(true);
+  const threeDInfo = useContext(ThreeDContextContextStore);
+
 
   useEffect(() => {
     async function getAxiosData() {
@@ -90,7 +93,8 @@ const GalleryDetail = ({ isLogin, userinfo, handle3dExhibition, location}) => {
 
   const history = useHistory();
   const goThreeDPage = () => {
-    handle3dExhibition(exhibitionInfo.id);
+    //handle3dExhibition(exhibitionInfo.id);
+    threeDInfo.setThreeDSelected(exhibitionInfo.id);
     history.push('/3dgallery')
   }
   

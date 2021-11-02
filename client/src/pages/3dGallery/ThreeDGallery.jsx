@@ -1,11 +1,14 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useCallback, useContext, useEffect, useState } from 'react';
 import ThreeDDetail from '../../components/3dDetail/ThreeDDetail';
 import ThreeDModal from '../../components/modals/ThreeDModal';
+import { ThreeDContextContextStore } from '../../contexts/ThreeDContext';
 
 
-const ThreeDGallery = ({ threeDSelected }) => {
+const ThreeDGallery = () => {
 
   const [modalOpen, setModalOpen] = useState(true);
+  const threeDInfo = useContext(ThreeDContextContextStore);
+  const threeDSelected = threeDInfo.threeDSelected;
   
   const escFunction = useCallback((event) => {
     if(event.keyCode === 27) {
@@ -14,7 +17,7 @@ const ThreeDGallery = ({ threeDSelected }) => {
   }, []);
 
   useEffect(() => {
-    console.log(threeDSelected);
+    //console.log(threeDSelected);
     document.addEventListener("keydown", escFunction, false);
     return () => {
       document.removeEventListener("keydown", escFunction, false);
